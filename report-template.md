@@ -11,8 +11,7 @@ Best score of model performance was reached in new hpo weighted ensemble 0.45708
 ### What did the exploratory analysis find and how did you add additional features?
 In EDA I have explored data by vizualization of some plots, like heat map where have been discovered  high correlation in input variables('season' and 'month', 'temp' and 'atemp'), decribe function of dataframe in pandas shows statistics for each feature such as min, max and procentile of frequence variables and histogram plots give bars where its seen for example when (more at working days than holidays) and in what weather was more often is used rent. Another influence for performance was made  adding more features by considering whether part of day('hour) and weather conditions('atemp', 'humidity', 'windspeed') are comfortable, for example: division of ' humidity' to 'very humid', 'mild humid' and 'not humid', changing of type some int inputs to category or boolean. New features were added by splitting 'datetime': 'day', 'month', 'year', 'hour'.
 ### How much better did your model preform after adding additional features and why do you think that is?
-Initial score(1.79572) before adding additional features score was improved to 0.78285
-Importance of features is shown below, bigger impact on mdel brings time features: part day, hour, working day
+Initial score(1.79572) before adding additional features score was improved to 0.78285. Importance of features is shown below, bigger impact on mdel brings time features: part day, hour, working day
 ![image](https://user-images.githubusercontent.com/44052996/164420296-5c2990ce-abeb-4f67-bffa-7d08be59dfd6.png)
 
 
